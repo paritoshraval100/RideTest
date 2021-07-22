@@ -9,12 +9,26 @@
 /* Begin PBXBuildFile section */
 		7FB0B84426A835630083420C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B84326A835630083420C /* AppDelegate.swift */; };
 		7FB0B84626A835630083420C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B84526A835630083420C /* SceneDelegate.swift */; };
-		7FB0B84826A835630083420C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B84726A835630083420C /* ViewController.swift */; };
 		7FB0B84B26A835630083420C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0B84926A835630083420C /* Main.storyboard */; };
 		7FB0B84D26A835660083420C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0B84C26A835660083420C /* Assets.xcassets */; };
 		7FB0B85026A835660083420C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0B84E26A835660083420C /* LaunchScreen.storyboard */; };
-		7FB0B85B26A835660083420C /* RideCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B85A26A835660083420C /* RideCellTests.swift */; };
-		7FB0B86626A835660083420C /* RideCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B86526A835660083420C /* RideCellUITests.swift */; };
+		7FB0B87526A835BB0083420C /* Vehicles.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0B87426A835BB0083420C /* Vehicles.json */; };
+		7FB0B87826A837730083420C /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B87726A837730083420C /* Vehicle.swift */; };
+		7FB0B87B26A83A6B0083420C /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B87A26A83A6B0083420C /* VehicleViewModel.swift */; };
+		7FB0B87E26A844300083420C /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B87D26A844300083420C /* VehicleViewController.swift */; };
+		7FB0B88026A852F90083420C /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B87F26A852F90083420C /* VehicleAnnotation.swift */; };
+		7FB0B88326A85B8F0083420C /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B88226A85B8F0083420C /* DetailCell.swift */; };
+		7FB0B88726A930E10083420C /* UIImageview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B88626A930E10083420C /* UIImageview+Extension.swift */; };
+		7FB0B88A26A932400083420C /* VehicleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B88926A932400083420C /* VehicleParser.swift */; };
+		7FB0B88C26A93AAA0083420C /* VehicleParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B88B26A93AAA0083420C /* VehicleParserTests.swift */; };
+		7FB0B88D26A93AF70083420C /* VehicleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B88926A932400083420C /* VehicleParser.swift */; };
+		7FB0B88E26A93BA40083420C /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B87726A837730083420C /* Vehicle.swift */; };
+		7FB0B88F26A93BC80083420C /* UIImageview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B88626A930E10083420C /* UIImageview+Extension.swift */; };
+		7FB0B89026A93BCC0083420C /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B88226A85B8F0083420C /* DetailCell.swift */; };
+		7FB0B89126A93BCF0083420C /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B87D26A844300083420C /* VehicleViewController.swift */; };
+		7FB0B89226A93BF80083420C /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B87A26A83A6B0083420C /* VehicleViewModel.swift */; };
+		7FB0B89426A93C4F0083420C /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B87F26A852F90083420C /* VehicleAnnotation.swift */; };
+		7FB0B89626A93D0A0083420C /* VehicleViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB0B89526A93D0A0083420C /* VehicleViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +49,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7FB0B84026A835630083420C /* RideCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB0B84026A835630083420C /* RideTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB0B84326A835630083420C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FB0B84526A835630083420C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7FB0B84726A835630083420C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7FB0B84A26A835630083420C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FB0B84C26A835660083420C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FB0B84F26A835660083420C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FB0B85126A835660083420C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FB0B85626A835660083420C /* RideCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FB0B85A26A835660083420C /* RideCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCellTests.swift; sourceTree = "<group>"; };
+		7FB0B85626A835660083420C /* RideTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB0B85C26A835660083420C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FB0B86126A835660083420C /* RideCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FB0B86526A835660083420C /* RideCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCellUITests.swift; sourceTree = "<group>"; };
+		7FB0B86126A835660083420C /* RideTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB0B86726A835660083420C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB0B87426A835BB0083420C /* Vehicles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vehicles.json; sourceTree = "<group>"; };
+		7FB0B87726A837730083420C /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		7FB0B87A26A83A6B0083420C /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		7FB0B87D26A844300083420C /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		7FB0B87F26A852F90083420C /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
+		7FB0B88226A85B8F0083420C /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		7FB0B88626A930E10083420C /* UIImageview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageview+Extension.swift"; sourceTree = "<group>"; };
+		7FB0B88926A932400083420C /* VehicleParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleParser.swift; sourceTree = "<group>"; };
+		7FB0B88B26A93AAA0083420C /* VehicleParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleParserTests.swift; sourceTree = "<group>"; };
+		7FB0B89526A93D0A0083420C /* VehicleViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +100,9 @@
 		7FB0B83726A835620083420C = {
 			isa = PBXGroup;
 			children = (
-				7FB0B84226A835630083420C /* RideCell */,
-				7FB0B85926A835660083420C /* RideCellTests */,
-				7FB0B86426A835660083420C /* RideCellUITests */,
+				7FB0B84226A835630083420C /* RideTest */,
+				7FB0B85926A835660083420C /* RideTestTest */,
+				7FB0B86426A835660083420C /* RideTestUITests */,
 				7FB0B84126A835630083420C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,51 +110,98 @@
 		7FB0B84126A835630083420C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FB0B84026A835630083420C /* RideCell.app */,
-				7FB0B85626A835660083420C /* RideCellTests.xctest */,
-				7FB0B86126A835660083420C /* RideCellUITests.xctest */,
+				7FB0B84026A835630083420C /* RideTest.app */,
+				7FB0B85626A835660083420C /* RideTestTests.xctest */,
+				7FB0B86126A835660083420C /* RideTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7FB0B84226A835630083420C /* RideCell */ = {
+		7FB0B84226A835630083420C /* RideTest */ = {
 			isa = PBXGroup;
 			children = (
+				7FB0B88126A85B660083420C /* Views */,
+				7FB0B87926A83A050083420C /* ViewModel */,
+				7FB0B87626A837520083420C /* Models */,
+				7FB0B88826A932230083420C /* Other */,
+				7FB0B87326A835A60083420C /* Resources */,
 				7FB0B84326A835630083420C /* AppDelegate.swift */,
 				7FB0B84526A835630083420C /* SceneDelegate.swift */,
-				7FB0B84726A835630083420C /* ViewController.swift */,
 				7FB0B84926A835630083420C /* Main.storyboard */,
 				7FB0B84C26A835660083420C /* Assets.xcassets */,
 				7FB0B84E26A835660083420C /* LaunchScreen.storyboard */,
 				7FB0B85126A835660083420C /* Info.plist */,
 			);
-			path = RideCell;
+			path = RideTest;
 			sourceTree = "<group>";
 		};
-		7FB0B85926A835660083420C /* RideCellTests */ = {
+		7FB0B85926A835660083420C /* RideTestTest */ = {
 			isa = PBXGroup;
 			children = (
-				7FB0B85A26A835660083420C /* RideCellTests.swift */,
 				7FB0B85C26A835660083420C /* Info.plist */,
+				7FB0B88B26A93AAA0083420C /* VehicleParserTests.swift */,
+				7FB0B89526A93D0A0083420C /* VehicleViewModelTests.swift */,
 			);
-			path = RideCellTests;
+			path = RideTestTest;
 			sourceTree = "<group>";
 		};
-		7FB0B86426A835660083420C /* RideCellUITests */ = {
+		7FB0B86426A835660083420C /* RideTestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7FB0B86526A835660083420C /* RideCellUITests.swift */,
 				7FB0B86726A835660083420C /* Info.plist */,
 			);
-			path = RideCellUITests;
+			path = RideTestUITests;
+			sourceTree = "<group>";
+		};
+		7FB0B87326A835A60083420C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0B87426A835BB0083420C /* Vehicles.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7FB0B87626A837520083420C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0B87726A837730083420C /* Vehicle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7FB0B87926A83A050083420C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0B87A26A83A6B0083420C /* VehicleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7FB0B88126A85B660083420C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0B87D26A844300083420C /* VehicleViewController.swift */,
+				7FB0B88226A85B8F0083420C /* DetailCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7FB0B88826A932230083420C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7FB0B88626A930E10083420C /* UIImageview+Extension.swift */,
+				7FB0B88926A932400083420C /* VehicleParser.swift */,
+				7FB0B87F26A852F90083420C /* VehicleAnnotation.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FB0B83F26A835630083420C /* RideCell */ = {
+		7FB0B83F26A835630083420C /* RideTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FB0B86A26A835660083420C /* Build configuration list for PBXNativeTarget "RideCell" */;
+			buildConfigurationList = 7FB0B86A26A835660083420C /* Build configuration list for PBXNativeTarget "RideTest" */;
 			buildPhases = (
 				7FB0B83C26A835630083420C /* Sources */,
 				7FB0B83D26A835630083420C /* Frameworks */,
@@ -143,14 +211,14 @@
 			);
 			dependencies = (
 			);
-			name = RideCell;
+			name = RideTest;
 			productName = RideCell;
-			productReference = 7FB0B84026A835630083420C /* RideCell.app */;
+			productReference = 7FB0B84026A835630083420C /* RideTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7FB0B85526A835660083420C /* RideCellTests */ = {
+		7FB0B85526A835660083420C /* RideTestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FB0B86D26A835660083420C /* Build configuration list for PBXNativeTarget "RideCellTests" */;
+			buildConfigurationList = 7FB0B86D26A835660083420C /* Build configuration list for PBXNativeTarget "RideTestTests" */;
 			buildPhases = (
 				7FB0B85226A835660083420C /* Sources */,
 				7FB0B85326A835660083420C /* Frameworks */,
@@ -161,14 +229,14 @@
 			dependencies = (
 				7FB0B85826A835660083420C /* PBXTargetDependency */,
 			);
-			name = RideCellTests;
+			name = RideTestTests;
 			productName = RideCellTests;
-			productReference = 7FB0B85626A835660083420C /* RideCellTests.xctest */;
+			productReference = 7FB0B85626A835660083420C /* RideTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7FB0B86026A835660083420C /* RideCellUITests */ = {
+		7FB0B86026A835660083420C /* RideTestUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7FB0B87026A835660083420C /* Build configuration list for PBXNativeTarget "RideCellUITests" */;
+			buildConfigurationList = 7FB0B87026A835660083420C /* Build configuration list for PBXNativeTarget "RideTestUITests" */;
 			buildPhases = (
 				7FB0B85D26A835660083420C /* Sources */,
 				7FB0B85E26A835660083420C /* Frameworks */,
@@ -179,9 +247,9 @@
 			dependencies = (
 				7FB0B86326A835660083420C /* PBXTargetDependency */,
 			);
-			name = RideCellUITests;
+			name = RideTestUITests;
 			productName = RideCellUITests;
-			productReference = 7FB0B86126A835660083420C /* RideCellUITests.xctest */;
+			productReference = 7FB0B86126A835660083420C /* RideTestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +274,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7FB0B83B26A835630083420C /* Build configuration list for PBXProject "RideCell" */;
+			buildConfigurationList = 7FB0B83B26A835630083420C /* Build configuration list for PBXProject "RideTest" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +287,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FB0B83F26A835630083420C /* RideCell */,
-				7FB0B85526A835660083420C /* RideCellTests */,
-				7FB0B86026A835660083420C /* RideCellUITests */,
+				7FB0B83F26A835630083420C /* RideTest */,
+				7FB0B85526A835660083420C /* RideTestTests */,
+				7FB0B86026A835660083420C /* RideTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB0B87526A835BB0083420C /* Vehicles.json in Resources */,
 				7FB0B85026A835660083420C /* LaunchScreen.storyboard in Resources */,
 				7FB0B84D26A835660083420C /* Assets.xcassets in Resources */,
 				7FB0B84B26A835630083420C /* Main.storyboard in Resources */,
@@ -258,8 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB0B84826A835630083420C /* ViewController.swift in Sources */,
+				7FB0B88A26A932400083420C /* VehicleParser.swift in Sources */,
+				7FB0B87B26A83A6B0083420C /* VehicleViewModel.swift in Sources */,
+				7FB0B87E26A844300083420C /* VehicleViewController.swift in Sources */,
+				7FB0B88726A930E10083420C /* UIImageview+Extension.swift in Sources */,
+				7FB0B87826A837730083420C /* Vehicle.swift in Sources */,
 				7FB0B84426A835630083420C /* AppDelegate.swift in Sources */,
+				7FB0B88026A852F90083420C /* VehicleAnnotation.swift in Sources */,
+				7FB0B88326A85B8F0083420C /* DetailCell.swift in Sources */,
 				7FB0B84626A835630083420C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +343,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB0B85B26A835660083420C /* RideCellTests.swift in Sources */,
+				7FB0B88E26A93BA40083420C /* Vehicle.swift in Sources */,
+				7FB0B89126A93BCF0083420C /* VehicleViewController.swift in Sources */,
+				7FB0B88D26A93AF70083420C /* VehicleParser.swift in Sources */,
+				7FB0B89026A93BCC0083420C /* DetailCell.swift in Sources */,
+				7FB0B88F26A93BC80083420C /* UIImageview+Extension.swift in Sources */,
+				7FB0B89226A93BF80083420C /* VehicleViewModel.swift in Sources */,
+				7FB0B89426A93C4F0083420C /* VehicleAnnotation.swift in Sources */,
+				7FB0B88C26A93AAA0083420C /* VehicleParserTests.swift in Sources */,
+				7FB0B89626A93D0A0083420C /* VehicleViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +359,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB0B86626A835660083420C /* RideCellUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +367,12 @@
 /* Begin PBXTargetDependency section */
 		7FB0B85826A835660083420C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7FB0B83F26A835630083420C /* RideCell */;
+			target = 7FB0B83F26A835630083420C /* RideTest */;
 			targetProxy = 7FB0B85726A835660083420C /* PBXContainerItemProxy */;
 		};
 		7FB0B86326A835660083420C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7FB0B83F26A835630083420C /* RideCell */;
+			target = 7FB0B83F26A835630083420C /* RideTest */;
 			targetProxy = 7FB0B86226A835660083420C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,15 +520,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW88Y5HA6W;
-				INFOPLIST_FILE = RideCell/Info.plist;
+				INFOPLIST_FILE = RideTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.RideCell;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RideTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -457,15 +539,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW88Y5HA6W;
-				INFOPLIST_FILE = RideCell/Info.plist;
+				INFOPLIST_FILE = RideTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.RideCell;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RideTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -476,18 +558,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW88Y5HA6W;
-				INFOPLIST_FILE = RideCellTests/Info.plist;
+				INFOPLIST_FILE = RideTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.RideCellTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RideTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RideCell.app/RideCell";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RideTest.app/RideTest";
 			};
 			name = Debug;
 		};
@@ -498,18 +580,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW88Y5HA6W;
-				INFOPLIST_FILE = RideCellTests/Info.plist;
+				INFOPLIST_FILE = RideTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.RideCellTests;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RideTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RideCell.app/RideCell";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RideTest.app/RideTest";
 			};
 			name = Release;
 		};
@@ -519,17 +601,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW88Y5HA6W;
-				INFOPLIST_FILE = RideCellUITests/Info.plist;
+				INFOPLIST_FILE = RideTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.RideCellUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RideTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RideCell;
+				TEST_TARGET_NAME = RideTest;
 			};
 			name = Debug;
 		};
@@ -539,24 +621,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW88Y5HA6W;
-				INFOPLIST_FILE = RideCellUITests/Info.plist;
+				INFOPLIST_FILE = RideTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.RideCellUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RideTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RideCell;
+				TEST_TARGET_NAME = RideTest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7FB0B83B26A835630083420C /* Build configuration list for PBXProject "RideCell" */ = {
+		7FB0B83B26A835630083420C /* Build configuration list for PBXProject "RideTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FB0B86826A835660083420C /* Debug */,
@@ -565,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FB0B86A26A835660083420C /* Build configuration list for PBXNativeTarget "RideCell" */ = {
+		7FB0B86A26A835660083420C /* Build configuration list for PBXNativeTarget "RideTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FB0B86B26A835660083420C /* Debug */,
@@ -574,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FB0B86D26A835660083420C /* Build configuration list for PBXNativeTarget "RideCellTests" */ = {
+		7FB0B86D26A835660083420C /* Build configuration list for PBXNativeTarget "RideTestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FB0B86E26A835660083420C /* Debug */,
@@ -583,7 +665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FB0B87026A835660083420C /* Build configuration list for PBXNativeTarget "RideCellUITests" */ = {
+		7FB0B87026A835660083420C /* Build configuration list for PBXNativeTarget "RideTestUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7FB0B87126A835660083420C /* Debug */,

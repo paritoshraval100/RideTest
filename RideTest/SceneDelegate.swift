@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  RideCell
+//  RideTest
 //
 //  Created by Paritosh_raval on 21/07/21.
 //
