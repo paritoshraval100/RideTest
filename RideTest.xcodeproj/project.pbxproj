@@ -39,13 +39,6 @@
 			remoteGlobalIDString = 7FB0B83F26A835630083420C;
 			remoteInfo = RideCell;
 		};
-		7FB0B86226A835660083420C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7FB0B83826A835630083420C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7FB0B83F26A835630083420C;
-			remoteInfo = RideCell;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +51,6 @@
 		7FB0B85126A835660083420C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FB0B85626A835660083420C /* RideTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB0B85C26A835660083420C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FB0B86126A835660083420C /* RideTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FB0B86726A835660083420C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FB0B87426A835BB0083420C /* Vehicles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Vehicles.json; sourceTree = "<group>"; };
 		7FB0B87726A837730083420C /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		7FB0B87A26A83A6B0083420C /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
@@ -87,13 +78,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FB0B85E26A835660083420C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,8 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				7FB0B84226A835630083420C /* RideTest */,
-				7FB0B85926A835660083420C /* RideTestTest */,
-				7FB0B86426A835660083420C /* RideTestUITests */,
+				7FB0B85926A835660083420C /* RideTestTests */,
 				7FB0B84126A835630083420C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,7 +95,6 @@
 			children = (
 				7FB0B84026A835630083420C /* RideTest.app */,
 				7FB0B85626A835660083420C /* RideTestTests.xctest */,
-				7FB0B86126A835660083420C /* RideTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,22 +117,14 @@
 			path = RideTest;
 			sourceTree = "<group>";
 		};
-		7FB0B85926A835660083420C /* RideTestTest */ = {
+		7FB0B85926A835660083420C /* RideTestTests */ = {
 			isa = PBXGroup;
 			children = (
 				7FB0B85C26A835660083420C /* Info.plist */,
 				7FB0B88B26A93AAA0083420C /* VehicleParserTests.swift */,
 				7FB0B89526A93D0A0083420C /* VehicleViewModelTests.swift */,
 			);
-			path = RideTestTest;
-			sourceTree = "<group>";
-		};
-		7FB0B86426A835660083420C /* RideTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				7FB0B86726A835660083420C /* Info.plist */,
-			);
-			path = RideTestUITests;
+			path = RideTestTests;
 			sourceTree = "<group>";
 		};
 		7FB0B87326A835A60083420C /* Resources */ = {
@@ -234,24 +208,6 @@
 			productReference = 7FB0B85626A835660083420C /* RideTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7FB0B86026A835660083420C /* RideTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7FB0B87026A835660083420C /* Build configuration list for PBXNativeTarget "RideTestUITests" */;
-			buildPhases = (
-				7FB0B85D26A835660083420C /* Sources */,
-				7FB0B85E26A835660083420C /* Frameworks */,
-				7FB0B85F26A835660083420C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7FB0B86326A835660083420C /* PBXTargetDependency */,
-			);
-			name = RideTestUITests;
-			productName = RideCellUITests;
-			productReference = 7FB0B86126A835660083420C /* RideTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,10 +221,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					7FB0B85526A835660083420C = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 7FB0B83F26A835630083420C;
-					};
-					7FB0B86026A835660083420C = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 7FB0B83F26A835630083420C;
 					};
@@ -289,7 +241,6 @@
 			targets = (
 				7FB0B83F26A835630083420C /* RideTest */,
 				7FB0B85526A835660083420C /* RideTestTests */,
-				7FB0B86026A835660083420C /* RideTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,13 +258,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7FB0B85426A835660083420C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7FB0B85F26A835660083420C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,13 +299,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FB0B85D26A835660083420C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -369,11 +306,6 @@
 			isa = PBXTargetDependency;
 			target = 7FB0B83F26A835630083420C /* RideTest */;
 			targetProxy = 7FB0B85726A835660083420C /* PBXContainerItemProxy */;
-		};
-		7FB0B86326A835660083420C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7FB0B83F26A835630083420C /* RideTest */;
-			targetProxy = 7FB0B86226A835660083420C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -595,46 +527,6 @@
 			};
 			name = Release;
 		};
-		7FB0B87126A835660083420C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YW88Y5HA6W;
-				INFOPLIST_FILE = RideTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.RideTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RideTest;
-			};
-			name = Debug;
-		};
-		7FB0B87226A835660083420C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YW88Y5HA6W;
-				INFOPLIST_FILE = RideTestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.RideTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RideTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -661,15 +553,6 @@
 			buildConfigurations = (
 				7FB0B86E26A835660083420C /* Debug */,
 				7FB0B86F26A835660083420C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7FB0B87026A835660083420C /* Build configuration list for PBXNativeTarget "RideTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7FB0B87126A835660083420C /* Debug */,
-				7FB0B87226A835660083420C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
