@@ -10,17 +10,21 @@ import Foundation
 struct Vehicle: Decodable {
     let id: Int
     let pool: String
-    let lat: Double?
-    let lng: Double?
-    let vehicle_pic_absolute_url: String
-    let vehicle_make: String
-    let remaining_mileage: Int
+    let latitude: Double?
+    let longitude: Double?
+    let vehicleMake: String
+    let vehicleMilage: Int
+    let imageURL: String
     
     var title: String {
-        "\(id) \(vehicle_make)"
+        "\(id) \(vehicleMake)"
     }
     
     var milage: String {
-        "\(remaining_mileage)g"
+        "\(vehicleMilage)g"
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case id, pool, latitude="lat", longitude="lng", vehicleMake = "vehicle_make", vehicleMilage = "remaining_mileage", imageURL = "vehicle_pic_absolute_url"
     }
 }

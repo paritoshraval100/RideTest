@@ -16,7 +16,7 @@ class DetailCell: UICollectionViewCell {
     func update(vehicle: Vehicle) {
         titleLabel.text = vehicle.title
         milageLable.text = vehicle.milage
-        imageView.imageFromServerURL(urlString: vehicle.vehicle_pic_absolute_url)
+        imageView.imageFromServerURL(urlString: vehicle.imageURL)
     }
 }
 

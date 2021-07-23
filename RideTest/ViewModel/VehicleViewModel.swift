@@ -31,7 +31,7 @@ class VehicleViewModel {
     func getLocationArray() -> [VehicleAnnotation] {
         var locationArray = [VehicleAnnotation]()
         for item in vehicles {
-            if let lat = item.lat, let lng = item.lng {
+            if let lat = item.latitude, let lng = item.longitude {
                 let artwork = VehicleAnnotation(
                     id: item.id,
                     title: item.title,
