@@ -47,10 +47,9 @@
                                                             <rect key="frame" x="40" y="60" width="326" height="137"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffo-Ty-2Nm">
-                                                            <rect key="frame" x="50" y="10" width="255" height="45"/>
+                                                            <rect key="frame" x="50" y="10" width="0.0" height="45"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="45" id="GQy-mT-poB"/>
-                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="255" id="b1W-CA-Ltq"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                             <nil key="textColor"/>
