@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIImageView {
-    public func imageFromServerURL(urlString: String, defaultImage : String? = "NoImage") {
+    public func imageFromServerURL(urlString: String, defaultImage : String? = "noImage") {
         if let di = defaultImage {
             self.image = UIImage(named: di)
         }

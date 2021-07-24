@@ -118,11 +118,9 @@ extension VehicleViewController: UICollectionViewDataSource, UICollectionViewDel
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width,
-                      height: collectionView.bounds.height)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenSize: CGRect = UIScreen.main.bounds
+        return CGSize(width: screenSize.width, height: 227)
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
